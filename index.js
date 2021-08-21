@@ -1,56 +1,33 @@
+setTimeout(function(){
+    document.body.className="";
+    console.log('loaded')
+},500);
+
 const navBar = document.querySelector('nav');
+const sideMenu = document.querySelector('#side-menu');
 window.addEventListener('scroll',function(e){
-    console.log(window.scrollY);
-    console.log(window.innerHeight);
-
-    if(window.scrollY <  window.innerHeight-70){
-        if(navBar.classList.contains('nav-presentation')){
-            navBar.classList.remove('nav-presentation')
-
-        }
-        if(navBar.classList.contains('nav-presentation')===false){
-            navBar.classList.add('nav-welcome')
 
 
-        }
+    if(window.scrollY <=  window.innerHeight){
+        navBar.classList.remove('out');
+
+        navBar.classList.add('in');
+
+        // navBar.classList.remove('hidden');
+        sideMenu.classList.remove('side-in');
+
+        sideMenu.classList.add('side-out');
 
 
 
     }
-    else if(window.scrollY >  window.innerHeight-70 && window.scrollY <  window.innerHeight*2-70){
-        if(navBar.classList.contains('nav-welcome')){
-            navBar.classList.remove('nav-welcome')
+    else if(window.scrollY >  window.innerHeight ) {
+        navBar.classList.remove('in');
 
-        }
-        if(navBar.classList.contains('nav-pricing')){
-            navBar.classList.remove('nav-pricing')
+        navBar.classList.add('out');
 
-        }
+        // navBar.classList.add('hidden');
+        sideMenu.classList.remove('side-out');
 
-        navBar.classList.add('nav-presentation')
-    }
-else if(window.scrollY >  window.innerHeight*2-70 && window.scrollY <  window.innerHeight*3-70){
-        if(navBar.classList.contains('nav-presentation')){
-            navBar.classList.remove('nav-presentation')
-
-        }
-        if(navBar.classList.contains('nav-contact')){
-            navBar.classList.remove('nav-contact')
-
-        }
-
-
-        navBar.classList.add('nav-pricing')
-    }
-
-else if(window.scrollY >  window.innerHeight*3-70){
-        if(navBar.classList.contains('nav-pricing')){
-            navBar.classList.remove('nav-pricing')
-
-        }
-
-        navBar.classList.add('nav-contact')
-    };
-
-})
-
+        sideMenu.classList.add('side-in');
+    }})

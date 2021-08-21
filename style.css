@@ -2,15 +2,55 @@ body {
     margin: 0;
 }
 
+body.preload *{
+    animation-duration: 0s !important;
+    -webkit-animation-duration: 0s !important;
+    transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;}
+
 nav {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: transparent;
+    background-color: #a2d2ff;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 75px;
+    height: 65px;
+    z-index: 1;
+    text-decoration: none;
+    box-shadow: 10px 8px 17px 2px rgba(0,0,0,0.36);
+    font-family: "Indie Flower";
+    font-size: 1.5em;
+    color: white;
+
+}
+
+.out {
+    animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+}
+
+.in {
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+.hidden {
+    display: none !important;
+}
+
+#side-menu {
+    margin-left: 25px;
+    position: fixed;
+    top: 0;
+    transformX: translate(-50%);
+    width: 75px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
     z-index: 1;
     text-decoration: none;
     /*box-shadow: 10px 8px 17px 2px rgba(0,0,0,0.36);*/
@@ -18,6 +58,114 @@ nav {
     font-size: 1.5em;
     color: white;
 
+}
+
+.side-in {
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+.side-out {
+    animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+}
+
+nav div {
+    margin-bottom : 20px;
+}
+
+#welcome-a{
+    cursor: pointer;
+    border: 2px white solid;
+    width: 50px;
+    height:50px;
+    border-radius: 100%;
+    box-shadow: 10px 8px 15px 2px rgba(0,0,0,0.71);
+
+    background-color: #a2d2ff;
+    background-image: url("./images/laurel.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#welcome-a:hover{
+
+
+
+    transform: scale(1.1);
+}
+
+#classes-a{
+    cursor: pointer;
+
+    border: 2px white solid;
+
+    width: 50px;
+    height:50px;
+    border-radius: 100%;
+    box-shadow: 10px 8px 15px 2px rgba(0,0,0,0.71);
+
+    background-color: #bee1e6;
+    background-image: url("./images/books.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#classes-a:hover{
+
+
+
+    transform: scale(1.1);
+}
+
+#prices-a{
+    cursor: pointer;
+
+    border: 2px white solid;
+
+    width: 50px;
+    height:50px;
+    border-radius: 100%;
+    box-shadow: 10px 8px 15px 2px rgba(0,0,0,0.71);
+
+    background-color: #ffc8dd;
+    background-image: url("./images/money.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#prices-a:hover{
+
+
+
+    transform: scale(1.1);
+}
+
+#contact-a{
+    cursor: pointer;
+
+    border: 2px white solid;
+
+    width: 50px;
+    height:50px;
+    border-radius: 100%;
+    box-shadow: 10px 8px 15px 2px rgba(0,0,0,0.71);
+
+    background-color: #cdb4db;
+    background-image: url("./images/contact.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#contact-a:hover{
+
+
+
+    transform: scale(1.1);
 }
 
 nav:focus{
@@ -102,15 +250,85 @@ nav span {
     padding: 10px;
 }
 
+.tier-title{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Bebas neue';
+    font-size: 3em;
+}
+
+#vip-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.vip-card{
+    color: cornsilk;
+    font-family: 'Bebas neue';
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.53);
+    box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.53);
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+#friend-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.friend-card{
+    color: cornsilk;
+    font-family: 'Bebas neue';
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.53);
+    box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.53);
+    padding: 5px;
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #a1a1a1 0%, #d7d7d1 8%, #767574 30%, #5f5f5b 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #ffffe1 8%, #999282 25%, #a19c9c 62.5%, #5d4a1f 100%);
+}
+
+.package-title{
+    text-align: center;
+    font-size: 1.4em;
+    padding: 5px;
+    border-bottom: 1px solid #9f7928;
+}
+
+.package-line{
+    font-size: 1.2em;
+    padding: 5px;
+    border-bottom: 1px solid #9f7928;
+
+}
+
+.package-line:nth-child(2n+1){
+    background-color: rgba(255,255,255,0.2);
+
+}
+
+.package-price{
+    padding-top: 5px;
+    text-align: center !important;
+    font-size: 4em;
+}
+
 nav span:hover {
-    background-color: #a2d2ff;
+    background-color: #bde0fe;
     border-radius: 10px;
     cursor: pointer;
 }
 #welcome{
     position: relative;
-    margin-top:-75px;
-    height: 95vh;
+    /*margin-top:-75px;*/
+    height: 100vh;
     background-color: #bde0fe;
 }
 
@@ -245,8 +463,9 @@ nav span:hover {
 
 #pricing {
     position: relative;
-    height: 100vh;
+    height: auto;
     background-color: #ffc8dd;
+    /*overflow-y: scroll;*/
 }
 
 #prices {
@@ -277,6 +496,7 @@ nav span:hover {
     /*margin-top: 50px;*/
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 20px;
 }
 
@@ -414,6 +634,20 @@ form button {
     }
 }
 
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 
 @-webkit-keyframes color-change-2x {
     0% {
@@ -467,10 +701,88 @@ form button {
     }
 }
 
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slide-out-left {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-out-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+}
+
+
+
+
 
 @media (max-width: 768px) {
     nav{
         display: none;
+    }
+
+    #side-menu {
+        margin-left: 0;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        transformX: translate(-50%);
+        width: 100%;
+        background-color: transparent;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        height: 70px;
+        /*align-items: center;*/
+        z-index: 1;
+        text-decoration: none;
+        /*box-shadow: 10px 8px 17px 2px rgba(0,0,0,0.36);*/
+        font-family: "Indie Flower";
+        font-size: 1.5em;
+        color: white;
+
     }
 
     #welcome{
@@ -480,7 +792,7 @@ form button {
     }
 
     #presentation{
-        height: 150vh;
+        height: auto;
 
     }
 }

@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allison&family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -13,15 +14,26 @@
     <title>English with Laci</title>
 
 </head>
-<body>
-<nav>
+<body class="preload">
+<nav class="in">
     <span id="maih"><a href="#presentation">Welcome</a></span>
-    <span id="about">About me</span>
-    <span id="courses">Courses</span>
-    <span id="price">Pricing</span>
-    <span id="contact">Contact</span>
+    <span id="about"><a href="#presentation">About me</a></span>
+    <span id="courses"><a href="#show-courses">Courses</a></span>
+    <span id="price"><a href="#pricing">Pricing</a></span>
+    <span id="contact"><a href="#contact-form">Contact me</a></span>
 
 </nav>
+<div id="side-menu" class="side-out">
+    <div id="welcome-a"class="nav-logo" onclick="window.location='#presentation'"></div>
+    <div id="classes-a"class="nav-logo" onclick="window.location='#show-courses'"></div>
+    <div id="prices-a"class="nav-logo" onclick="window.location='#pricing'"></div>
+    <div id="contact-a"class="nav-logo" onclick="window.location='#contact-form'"></div>
+
+
+
+
+
+</div>
 
 <div id="welcome">
 
@@ -75,25 +87,54 @@
 </div>
 <div id="pricing">
     <div class="section-title price"><span></span></div>
-    <div id="prices">
-        <div id="class">
-            <span>Class</span>
-            <span>VIP Class (1 student)</span>
-            <span>Learn with a friend (2 students)</span>
+    <div id="vip">
+        <div class="tier-title">VIP Class</div>
+        <div id="vip-container">
+            <div class="vip-card">
+                <div class="package-title">Single class</div>
+                <div class="package-line">One on one interaction</div>
+                <div class="package-line">55 minutes</div>
+                <div class="package-line">Custom tailored classes</div>
+                <div class="package-line">Fun material</div>
+                <div class="package-price">$50</div>
+
+            </div>
+            <div class="vip-card">
+                <div class="package-title">10 classes bundle</div>
+                <div class="package-line">One on one interaction</div>
+                <div class="package-line">55 minutes</div>
+                <div class="package-line">Custom tailored classes</div>
+                <div class="package-line">Fun material</div>
+                <div class="package-price">$475</div>
+
+            </div>
+            <div class="vip-card">
+                <div class="package-title">20 classes bundle</div>
+                <div class="package-line">One on one interaction</div>
+                <div class="package-line">55 minutes</div>
+                <div class="package-line">Custom tailored classes</div>
+                <div class="package-line">Fun material</div>
+                <div class="package-price">$900</div>
+
+            </div>
         </div>
-        <div id="duration">
-            <span>Duration</span>
-            <span>55 minutes</span>
-            <span>55 minutes</span>
+        <div class="tier-title">learn with a friend</div>
+        <div id="friend-container">
+            <div class="friend-card">
+                <div class="package-title">Single class</div>
+                <div class="package-line">2 students in a classroom</div>
+                <div class="package-line">55 minutes</div>
+                <div class="package-line">Custom tailored classes</div>
+                <div class="package-line">Fun material</div>
+                <div class="package-price">$25</div>
+
+            </div>
         </div>
-        <div id="price-list">
-            <span>Prices</span>
-            <span>$50</span>
-            <span>$25</span>
         </div>
+    <div id="pricing-split"></div>
+
     </div>
 
-    <div id="pricing-split"></div>
 
 </div>
 <div id="contact-form">
@@ -120,6 +161,6 @@
 </div>
 
 
-<!--<script src="index.js"></script>-->
+<script src="index.js"></script>
 </body>
 </html>
