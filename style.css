@@ -2,10 +2,11 @@ body {
     margin: 0;
 }
 
-body.preload *{
+body.preload * {
     animation-duration: 0s !important;
     -webkit-animation-duration: 0s !important;
-    transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;}
+    transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
+}
 
 nav {
     position: fixed;
@@ -18,10 +19,10 @@ nav {
     height: 65px;
     z-index: 1;
     text-decoration: none;
-    box-shadow: 10px 8px 17px 2px rgba(0,0,0,0.36);
+    box-shadow: 10px 8px 17px 2px rgba(0, 0, 0, 0.36);
     font-family: "Indie Flower";
     font-size: 1.5em;
-    color: white;
+    color: black;
 
 }
 
@@ -56,7 +57,7 @@ nav {
     /*box-shadow: 10px 8px 17px 2px rgba(0,0,0,0.36);*/
     font-family: "Indie Flower";
     font-size: 1.5em;
-    color: white;
+    color: black;
 
 }
 
@@ -71,16 +72,16 @@ nav {
 }
 
 nav div {
-    margin-bottom : 20px;
+    margin-bottom: 20px;
 }
 
-#welcome-a{
+#welcome-a {
     cursor: pointer;
     border: 2px white solid;
     width: 50px;
-    height:50px;
+    height: 50px;
     border-radius: 100%;
-    box-shadow: 10px 8px 15px 2px rgba(0,0,0,0.71);
+    box-shadow: 10px 8px 15px 2px rgba(0, 0, 0, 0.71);
 
     background-color: #a2d2ff;
     background-image: url("./images/laurel.svg");
@@ -89,22 +90,21 @@ nav div {
     background-position: center;
 }
 
-#welcome-a:hover{
-
+#welcome-a:hover {
 
 
     transform: scale(1.1);
 }
 
-#classes-a{
+#classes-a {
     cursor: pointer;
 
     border: 2px white solid;
 
     width: 50px;
-    height:50px;
+    height: 50px;
     border-radius: 100%;
-    box-shadow: 10px 8px 15px 2px rgba(0,0,0,0.71);
+    box-shadow: 10px 8px 15px 2px rgba(0, 0, 0, 0.71);
 
     background-color: #bee1e6;
     background-image: url("./images/books.svg");
@@ -113,22 +113,21 @@ nav div {
     background-position: center;
 }
 
-#classes-a:hover{
-
+#classes-a:hover {
 
 
     transform: scale(1.1);
 }
 
-#prices-a{
+#prices-a {
     cursor: pointer;
 
     border: 2px white solid;
 
     width: 50px;
-    height:50px;
+    height: 50px;
     border-radius: 100%;
-    box-shadow: 10px 8px 15px 2px rgba(0,0,0,0.71);
+    box-shadow: 10px 8px 15px 2px rgba(0, 0, 0, 0.71);
 
     background-color: #ffc8dd;
     background-image: url("./images/money.svg");
@@ -137,22 +136,21 @@ nav div {
     background-position: center;
 }
 
-#prices-a:hover{
-
+#prices-a:hover {
 
 
     transform: scale(1.1);
 }
 
-#contact-a{
+#contact-a {
     cursor: pointer;
 
     border: 2px white solid;
 
     width: 50px;
-    height:50px;
+    height: 50px;
     border-radius: 100%;
-    box-shadow: 10px 8px 15px 2px rgba(0,0,0,0.71);
+    box-shadow: 10px 8px 15px 2px rgba(0, 0, 0, 0.71);
 
     background-color: #cdb4db;
     background-image: url("./images/contact.svg");
@@ -161,34 +159,33 @@ nav div {
     background-position: center;
 }
 
-#contact-a:hover{
-
+#contact-a:hover {
 
 
     transform: scale(1.1);
 }
 
-nav:focus{
+nav:focus {
     text-decoration: none;
 }
 
 nav a {
     text-decoration: none;
-    color:white;
+    color: black;
 }
 
-.certified{
+.certified {
     margin-top: -40px;
     background-image: url("./images/laurel.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     height: 200px;
-line-height: 150px;}
+    line-height: 150px;
+}
 
 
-
-.classes{
+.classes {
     /*margin-top: -40px;*/
     background-image: url("./images/books.svg");
     background-repeat: no-repeat;
@@ -198,7 +195,7 @@ line-height: 150px;}
     line-height: 20px;
 }
 
-.price{
+.price {
     /*margin-top: -40px;*/
     background-image: url("./images/money.svg");
     background-repeat: no-repeat;
@@ -250,24 +247,24 @@ nav span {
     padding: 10px;
 }
 
-.tier-title{
+.tier-title {
     text-align: center;
     padding: 20px;
     font-family: 'Bebas neue';
     font-size: 3em;
 }
 
-#vip-container{
+#vip-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.vip-card{
+.vip-card {
     color: cornsilk;
     font-family: 'Bebas neue';
-    -webkit-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.53);
-    box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.53);
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.53);
     margin-bottom: 15px;
     padding: 15px;
     width: 200px;
@@ -277,17 +274,17 @@ nav span {
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 }
 
-#friend-container{
+#friend-container {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 
-.friend-card{
+.friend-card {
     color: cornsilk;
     font-family: 'Bebas neue';
-    -webkit-box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.53);
-    box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.53);
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.53);
     padding: 5px;
     width: 200px;
     height: 250px;
@@ -296,26 +293,26 @@ nav span {
     radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #ffffe1 8%, #999282 25%, #a19c9c 62.5%, #5d4a1f 100%);
 }
 
-.package-title{
+.package-title {
     text-align: center;
     font-size: 1.6em;
     padding: 5px;
     border-bottom: 1px solid #9f7928;
 }
 
-.package-line{
+.package-line {
     font-size: 1.2em;
     padding: 5px;
     border-bottom: 1px solid #9f7928;
 
 }
 
-.package-line:nth-child(2n+1){
-    background-color: rgba(255,255,255,0.2);
+.package-line:nth-child(2n+1) {
+    background-color: rgba(255, 255, 255, 0.2);
 
 }
 
-.package-price{
+.package-price {
     padding-top: 5px;
     text-align: center !important;
     font-size: 4em;
@@ -326,14 +323,15 @@ nav span:hover {
     border-radius: 10px;
     cursor: pointer;
 }
-#welcome{
+
+#welcome {
     position: relative;
     /*margin-top:-75px;*/
     height: 100vh;
     background-color: #bde0fe;
 }
 
-#welcome-split{
+#welcome-split {
     position: absolute;
     bottom: 0;
     background-image: url("./welcome_split.svg");
@@ -344,7 +342,7 @@ nav span:hover {
     width: 100%;
 }
 
-#presentation-split{
+#presentation-split {
     transform: scaleY(-1);
     position: absolute;
     bottom: 0;
@@ -356,7 +354,7 @@ nav span:hover {
     width: 100%;
 }
 
-#pricing-split{
+#pricing-split {
     transform: scaleY(-1);
     position: absolute;
     bottom: 0;
@@ -368,7 +366,7 @@ nav span:hover {
     width: 100%;
 }
 
-#courses-split{
+#courses-split {
     transform: scaleY(-1);
     position: absolute;
     bottom: 0;
@@ -380,19 +378,18 @@ nav span:hover {
     width: 100%;
 }
 
-.blob{
-    background-image: url("./images/blob.svg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*padding: 50px;*/
+.blob {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 500px;
 }
 
-#welcome-container{
+#welcome-container {
     flex-wrap: wrap;
     position: absolute;
-    top:10%;
+    top: 10%;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -400,14 +397,14 @@ nav span:hover {
 }
 
 #title {
-    display : inline-block;
+    display: inline-block;
     flex-direction: column;
     margin-top: -5%;
     /*margin-left: 15%;*/
 }
 
-.section-title{
-    color:white;
+.section-title {
+    color: black;
     text-align: center;
     font-size: 2em;
     font-family: 'Style Script';
@@ -424,10 +421,11 @@ nav span:hover {
 /*    border-radius: 10px;*/
 /*}*/
 
-.half1{
+.half1 {
     font-family: Indie Flower, cursive;
     font-size: 2em;
 }
+
 .half2 {
     margin-top: -40px;
     font-family: Allison, cursive;
@@ -435,13 +433,18 @@ nav span:hover {
     color: #cdb4db;
 }
 
-#welcome-speech{
+#welcome-speech {
+    background-image: url("./images/frame.svg");
+
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
     max-width: 450px;
     font-family: "Indie Flower";
     font-size: 1.2em;
-    padding: 180px 50px 50px 90px;
+    padding: 50px;
 
-    color: white;
+    color: black;
 }
 
 #photo img {
@@ -450,16 +453,22 @@ nav span:hover {
     margin-left: 30px;
 }
 
-#presentation{
+#presentation {
     position: relative;
     height: 100vh;
     background-color: #a2d2ff;
 }
 
-#show-courses{
+#show-courses {
     position: relative;
     height: 100vh;
     background-color: #bee1e6;
+}
+
+#courses-container{
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #pricing {
@@ -467,6 +476,18 @@ nav span:hover {
     height: auto;
     background-color: #ffc8dd;
     /*overflow-y: scroll;*/
+}
+
+#payment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 300px;
+}
+
+#payment img {
+    max-height: 50px;
+    margin: 20px;
 }
 
 #prices {
@@ -483,7 +504,7 @@ nav span:hover {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.53);
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.53);
 }
 
 #class {
@@ -493,7 +514,7 @@ nav span:hover {
     justify-content: space-evenly;
 }
 
-#about-container{
+#about-container {
     /*margin-top: 50px;*/
     display: flex;
     justify-content: space-around;
@@ -501,8 +522,8 @@ nav span:hover {
     padding: 20px;
 }
 
-.col{
-    color:white;
+.col {
+    color: black;
     padding: 20px;
     display: flex;
     width: 50%;
@@ -535,6 +556,7 @@ nav span:hover {
     border-bottom: 1px solid black;
 
 }
+
 #price-list {
     display: flex;
     flex-direction: column;
@@ -548,62 +570,63 @@ nav span:hover {
 
 }
 
-#form{
+#form {
     width: 80%;
     position: absolute;
-    top:55%;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-#name-input{
+#name-input {
     display: flex;
 
     justify-content: space-evenly;
     padding: 10px;
 }
-#mail-input{
+
+#mail-input {
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
 }
 
-input{
+input {
     height: 50px;
-    width:200px;
+    width: 200px;
     border-radius: 10px;
     background-color: transparent;
     border: 1px solid pink;
 }
 
-textarea{
+textarea {
     height: 150px;
-    width:60%;
+    width: 60%;
     border-radius: 10px;
     background-color: transparent;
     border: 1px solid pink;
 }
 
-input:focus, textarea:focus{
+input:focus, textarea:focus {
     background-color: pink;
 }
 
-textarea:focus, input:focus{
+textarea:focus, input:focus {
     outline: none;
 }
 
 input::placeholder, textarea::placeholder {
-    color:white;
+    color: black;
     padding: 5px;
 }
 
-#comments-line{
+#comments-line {
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
 }
 
-#contact-form{
+#contact-form {
     position: relative;
     height: 100vh;
     background-color: #cdb4db;
@@ -611,13 +634,14 @@ input::placeholder, textarea::placeholder {
 
 form button {
     position: absolute;
-    left:50%;
-    height:50px;
+    left: 50%;
+    height: 50px;
     transform: translate(-50%);
     width: 60%;
     background-color: pink;
     border-radius: 10px;
 }
+
 @-webkit-keyframes welcome-transition {
     0% {
         background: #a2d2ff;
@@ -626,6 +650,7 @@ form button {
         background: #bde0fe;
     }
 }
+
 @keyframes welcome-transition {
     0% {
         background: #a2d2ff;
@@ -649,7 +674,6 @@ form button {
 }
 
 
-
 @-webkit-keyframes color-change-2x {
     0% {
         background: #bde0fe;
@@ -658,6 +682,7 @@ form button {
         background: #a2d2ff;
     }
 }
+
 @keyframes color-change-2x {
     0% {
         background: #bde0fe;
@@ -675,6 +700,7 @@ form button {
         background: #ffc8dd;
     }
 }
+
 @keyframes pricing-transition {
     0% {
         background: #a2d2ff;
@@ -693,6 +719,7 @@ form button {
         background: #cdb4db;
     }
 }
+
 @keyframes contact-transition {
     0% {
         background: #ffc8dd;
@@ -756,11 +783,8 @@ form button {
 }
 
 
-
-
-
 @media (max-width: 768px) {
-    nav{
+    nav {
         display: none;
     }
 
@@ -782,18 +806,19 @@ form button {
         /*box-shadow: 10px 8px 17px 2px rgba(0,0,0,0.36);*/
         font-family: "Indie Flower";
         font-size: 1.5em;
-        color: white;
+        color: black;
 
     }
 
-    #welcome{
+    #welcome {
         margin-top: 0;
         height: 150vh;
 
     }
 
-    #presentation{
+    #presentation {
         height: auto;
+        padding-bottom: 100px;
 
     }
 }
