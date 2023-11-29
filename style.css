@@ -557,6 +557,17 @@ nav span:hover {
 
 }
 
+.alert {
+    background-color: #eaeaea;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    //transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.53);
+
+}
+
 #price-list {
     display: flex;
     flex-direction: column;
